@@ -1,0 +1,24 @@
+/* Can0nical brand: Electric Verdant semantic theme tokens.
+   RGB channels so Tailwind's `/ <alpha-value>` works (see tailwind-preset.js).
+   Dark is the default. Set data-theme="light" on <html> for light mode.
+   Lime and Amber stay fixed accents in both themes. */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-rgb: 13 26 16; /* Deep Void #0D1A10 */
+  --surface-rgb: 13 26 16; /* Deep Void #0D1A10 */
+  --content-rgb: 242 253 233; /* Mint #F2FDE9 */
+  --line-rgb: 26 92 46; /* Forest Anchor #1A5C2E */
+  --accent-rgb: 110 224 52; /* Electric Lime #6EE034 */
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg-rgb: 242 253 233; /* Mint #F2FDE9 */
+  --surface-rgb: 255 255 255; /* White #FFFFFF */
+  --content-rgb: 26 92 46; /* Forest Anchor #1A5C2E */
+  --line-rgb: 26 92 46; /* Forest Anchor #1A5C2E (lower alpha in use) */
+  /* Lime text on Mint is unreadable, so the accent foreground flips to Forest.
+     Lime button fills (bg-lime text-void) are unaffected. */
+  --accent-rgb: 26 92 46; /* Forest Anchor #1A5C2E */
+}

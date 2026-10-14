@@ -1,0 +1,40 @@
+{
+  "name": "@can0nical/brand",
+  "version": "0.1.0",
+  "description": "Can0nical brand system (Electric Verdant): BRAND.md, Tailwind preset and design tokens.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aju-Boss/can0nical-brand.git"
+  },
+  "exports": {
+    ".": "./tailwind-preset.js",
+    "./preset": "./tailwind-preset.js",
+    "./tokens.css": "./tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./BRAND.md": "./BRAND.md",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "BRAND.md",
+    "tailwind-preset.js",
+    "tokens.css",
+    "tokens.json",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "peerDependenciesMeta": {
+    "tailwindcss": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
